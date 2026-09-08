@@ -1,3 +1,36 @@
-name = "hydar"
-print ("Hello," + name)
 
+# total_predictions = 80
+# # correct_predictions = 60
+# correct_predictions = 40
+# incorrect_predictions = total_predictions - correct_predictions
+# # incorrect_predictions = 20
+# accuracy = correct_predictions / total_predictions
+
+# error_rate = incorrect_predictions / total_predictions * 100
+
+# # print ("incorrect_predictions:",incorrect_predictions / total_predictions * 100)
+# # print (incorrect_predictions)
+# print(error_rate)
+
+# if error_rate <= 5:
+#     print ("it is within the target")
+
+# elif error_rate > 5 and error_rate <=  10: 
+#     print ("Meets the target")
+# else: 
+#     print ("It is above the target")
+
+
+# LIST
+accuracies = [0.15, 0.45, 0.95, 0.45]
+
+# print(len(accuracies))
+
+# accuracies.append(0.66)
+# accuracies[2] = 0.77
+# print(accuracies)
+print(accuracies[0])
+print(accuracies[3])
+accuracies.append(0.11)
+accuracies[1]=0.11
+print(accuracies)
