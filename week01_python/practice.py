@@ -29,8 +29,24 @@ accuracies = [0.15, 0.45, 0.95, 0.45]
 # accuracies.append(0.66)
 # accuracies[2] = 0.77
 # print(accuracies)
-print(accuracies[0])
-print(accuracies[3])
-accuracies.append(0.11)
-accuracies[1]=0.11
-print(accuracies)
+# print(accuracies[0])
+# print(accuracies[3])
+# accuracies.append(0.11)
+# accuracies[1]=0.11
+# print(accuracies)
+
+
+
+# LOOP[]
+# for accuracy in accuracies:
+#  if accuracy >= 0.95:
+#     print(accuracy)
+#  else:
+#     print("none")
+
+accuracies = [0.75, 0.96, 0.91, 0.98, 0.95]
+count = 0
+for accuracy in accuracies:
+ if accuracy >= 0.90:
+    count +=1
+print(count)
