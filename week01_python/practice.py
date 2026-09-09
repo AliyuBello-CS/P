@@ -44,9 +44,23 @@ accuracies = [0.15, 0.45, 0.95, 0.45]
 #  else:
 #     print("none")
 
-accuracies = [0.75, 0.96, 0.91, 0.98, 0.95]
-count = 0
-for accuracy in accuracies:
- if accuracy >= 0.90:
-    count +=1
+# accuracies = [0.75, 0.96, 0.91, 0.98, 0.95]
+# count = 0
+# for accuracy in accuracies:
+#  if accuracy >= 0.90:
+#     count +=1
+# print(count)
+
+labels = [" Positive ", "NEGATIVE", " positive", "Negative  "]
+
+# for label in labels:
+#     clean_label = label.strip().lower()
+#     print(clean_label)
+
+count = 0 
+for label in labels:
+    clean_label = label.strip().lower()
+
+    if clean_label == "positive":
+        count +1
 print(count)
