@@ -51,16 +51,40 @@ accuracies = [0.15, 0.45, 0.95, 0.45]
 #     count +=1
 # print(count)
 
-labels = [" Positive ", "NEGATIVE", " positive", "Negative  "]
+# labels = [" Positive ", "NEGATIVE", " positive", "Negative  "]
 
+# # for label in labels:
+# #     clean_label = label.strip().lower()
+# #     print(clean_label)
+
+# count = 0 
 # for label in labels:
 #     clean_label = label.strip().lower()
-#     print(clean_label)
 
-count = 0 
-for label in labels:
-    clean_label = label.strip().lower()
+#     if clean_label == "negative":
+#         count += 1
+# print(count)
 
-    if clean_label == "positive":
-        count +1
-print(count)
+# DICT
+dataset = {
+    "name": "Aliyu",
+    "rows": 500,
+    "features": 15
+}
+
+dataset["rows"] = 1200
+dataset["missing_values"] = 33
+dataset["training_rows"] = int(0.8 * dataset["rows"])
+dataset["test_rows"]= int(dataset["rows"] - dataset["training_rows"])
+print(dataset)
+
+
+models = [
+    {"name": "Logistic Regression", "accuracy": 0.85},
+    {"name": "Random Forest", "accuracy": 0.92},
+    {"name": "Decision Tree", "accuracy": 0.88}
+]
+
+for model in models:
+    if model["accuracy"] >= 0.9:
+        print(model["name"])
