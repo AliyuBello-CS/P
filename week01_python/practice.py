@@ -66,17 +66,17 @@ accuracies = [0.15, 0.45, 0.95, 0.45]
 # print(count)
 
 # DICT
-dataset = {
-    "name": "Aliyu",
-    "rows": 500,
-    "features": 15
-}
+# dataset = {
+#     "name": "Aliyu",
+#     "rows": 500,
+#     "features": 15
+# }
 
-dataset["rows"] = 1200
-dataset["missing_values"] = 33
-dataset["training_rows"] = int(0.8 * dataset["rows"])
-dataset["test_rows"]= int(dataset["rows"] - dataset["training_rows"])
-print(dataset)
+# dataset["rows"] = 1200
+# dataset["missing_values"] = 33
+# dataset["training_rows"] = int(0.8 * dataset["rows"])
+# dataset["test_rows"]= int(dataset["rows"] - dataset["training_rows"])
+# print(dataset)
 
 
 models = [
@@ -84,7 +84,20 @@ models = [
     {"name": "Random Forest", "accuracy": 0.92},
     {"name": "Decision Tree", "accuracy": 0.88}
 ]
+# selected_models = []
+# count = 0 
+# for model in models:
+#     if model["accuracy"] >= 0.8 and model["accuracy"] < 0.9 :
+#         selected_models.append(model["name"])
+# print(selected_models)
 
-for model in models:
-    if model["accuracy"] >= 0.9:
-        print(model["name"])
+# tot+accu = 0 
+
+##Function
+def calculate_error(incorrect, total):
+    
+        rate = incorrect / total
+        return rate
+
+result = calculate_error(40,80)
+print (result)
