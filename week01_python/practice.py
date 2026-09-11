@@ -101,3 +101,29 @@ def calculate_error(incorrect, total):
 
 result = calculate_error(40,80)
 print (result)
+
+def error_a(incorrect, total):
+    return(incorrect / total)
+
+def error_b(incorrect, total):
+    return incorrect / total
+
+# rate = error_a(4, 80)
+# print(rate * 100)  
+
+
+def clean_label(label):
+     return label.strip().lower()
+
+result = clean_label(" POSITIVE")
+print(result)
+
+
+def clean_label(label):
+    return label.strip().lower()
+
+labels = [" YES ", "No", " yes", " NO "]
+
+for label in labels:
+    result = clean_label(label)
+    print(result)
