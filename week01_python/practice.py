@@ -126,4 +126,6 @@ labels = [" YES ", "No", " yes", " NO "]
 
 for label in labels:
     result = clean_label(label)
-    print(result)
+    print(result) 
+
+    
