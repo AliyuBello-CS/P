@@ -68,4 +68,6 @@ import numpy as np
 
 # revenue = np.array([1200, 450, 2300, 1750, 890, 3100])
 
-# print(revenue.mean)
+# print(revenue.mean) 
+
+salaries = np.array([55000, 62000, 58000, 61000, 250000, 59000])
